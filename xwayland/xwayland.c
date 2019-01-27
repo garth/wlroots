@@ -80,6 +80,7 @@ static void exec_xwayland(struct wlr_xwayland *wlr_xwayland) {
 	char *argv[] = {
 		"Xwayland", NULL /* display, e.g. :1 */,
 		"-rootless", "-terminate",
+		"-dpi", "240",
 		"-listen", NULL /* x_fd[0] */,
 		"-listen", NULL /* x_fd[1] */,
 		"-wm", NULL /* wm_fd[1] */,
